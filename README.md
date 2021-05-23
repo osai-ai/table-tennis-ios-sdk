@@ -4,6 +4,8 @@ This sdk is for https://tt.osai.ai
 
 ## How to use
 
+Drag `OsaiTableTennisSDK.xcframework` into your XCode project, add this framework in `General->Frameworks, Libraries, and Embedded Content` of your app and select `Embed and sign`
+
 ### Preparation
 
 Add initialization code in your AppDelegate

@@ -1,0 +1,6 @@
+framework module OsaiTableTennisSDK {
+  umbrella header "OsaiTableTennisSDK.h"
+
+  export *
+  module * { export * }
+}

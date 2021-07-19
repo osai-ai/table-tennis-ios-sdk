@@ -95,7 +95,7 @@
 #pragma mark - Actions
 
 - (void)createGameButtonTap {
-    OSAIGameModel *game = [OSAITableTennis.sharedInstance createGameWithLeftPlayerName:@"Foo" rightPlayerName:@"Bar" gameType:OSAIGameTypeGame rulesType:OSAIGameRules11Points];
+    OSAIGameModel *game = [OSAITableTennis.sharedInstance createGameWithLeftPlayerName:@"Foo" rightPlayerName:@"Bar" gameType:OSAIGameTypeGame userLogin:@"Test user"];
     RecordViewController *controller = [RecordViewController new];
     controller.game = game;
     ExampleAppDelegate *appDelegate = (ExampleAppDelegate *)[UIApplication sharedApplication].delegate;

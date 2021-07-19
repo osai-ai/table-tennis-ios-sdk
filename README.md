@@ -32,8 +32,8 @@ For record you need to create game first
 /// @param leftPlayerName Name of left player
 /// @param rightPlayerName Name of right player
 /// @param gameType Type of game
-/// @param rulesType Rules of game
-- (nullable OSAIGameModel *)createGameWithLeftPlayerName:(nullable NSString *)leftPlayerName rightPlayerName:(nullable NSString *)rightPlayerName gameType:(OSAIGameType)gameType rulesType:(OSAIGameRules)rulesType;
+/// @param userLogin Login of user
+- (nullable OSAIGameModel *)createGameWithLeftPlayerName:(nullable NSString *)leftPlayerName rightPlayerName:(nullable NSString *)rightPlayerName gameType:(OSAIGameType)gameType userLogin:(nullable NSString *)userLogin;
 ```
 
 To obtain all recorded games you can call  

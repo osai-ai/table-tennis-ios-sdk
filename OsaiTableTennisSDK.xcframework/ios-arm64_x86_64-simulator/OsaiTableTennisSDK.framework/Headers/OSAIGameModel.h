@@ -7,6 +7,14 @@
 
 #import <UIKit/UIKit.h>
 
+/// State of processing
+typedef NS_ENUM(NSUInteger, OSAIProcessState) {
+    OSAIProcessStateNotStarted,
+    OSAIProcessStateHandling,
+    OSAIProcessStateDone,
+    OSAIProcessStateCancelled,
+};
+
 /// State of the game
 typedef NS_ENUM(NSUInteger, OSAIGameState) {
     /// Game is created or recorded. Not uploaded to osai server
@@ -23,27 +31,23 @@ typedef NS_ENUM(NSUInteger, OSAIGameState) {
 
 /// Type of recording game
 typedef NS_ENUM(NSUInteger, OSAIGameType) {
-    /// Real game
+    /// With referee
     OSAIGameTypeGame,
-    /// Training
+    /// Without referee
     OSAIGameTypeTraining
-};
-
-/// Rules
-typedef NS_ENUM(NSUInteger, OSAIGameRules) {
-    /// 5 sets
-    OSAIGameRules5Sets,
-    /// 1 set of 11 points
-    OSAIGameRules11Points,
-    /// Best of 3
-    OSAIGameRulesBo3
 };
 
 @interface OSAIGameModel : NSObject <NSCoding>
 
-/// Game state. Observable
+/// Game local state. Observable
 @property (assign, nonatomic, readonly) OSAIGameState state;
+/// Game processing state. Observable
+@property (assign, nonatomic, readonly) OSAIProcessState processState;
+/// Link to report
+@property (strong, nonatomic, readonly) NSString *reportUrl;
+/// Name of left player
 @property (strong, nonatomic, readonly) NSString *leftPlayerName;
+/// Name of right player
 @property (strong, nonatomic, readonly) NSString *rightPlayerName;
 /// Date of creation
 @property (strong, nonatomic, readonly) NSDate *date;
@@ -53,8 +57,8 @@ typedef NS_ENUM(NSUInteger, OSAIGameRules) {
 @property (assign, nonatomic, readonly) double totalSize;
 /// Upload progress. Observable
 @property (assign, nonatomic, readonly) double uploadProgress;
+/// Type of game
 @property (assign, nonatomic, readonly) OSAIGameType type;
-@property (assign, nonatomic, readonly) OSAIGameRules rules;
 /// Uploading error. Only for state OSAIGameStateError
 @property (strong, nonatomic, readonly) NSError *error;
 
@@ -73,8 +77,8 @@ typedef NS_ENUM(NSUInteger, OSAIGameRules) {
 /// Stop uploading process
 - (void)stopUpload;
 
-#ifdef DEBUG
+- (void)updateStatus;
+
 - (void)resetState;
-#endif
 
 @end

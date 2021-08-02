@@ -17,8 +17,10 @@
 /// Use [OSAITableTennis setupWithApiKey:] to init SDK
 - (nullable instancetype)initWithCoder:(nullable NSCoder *)coder NS_UNAVAILABLE;
 
-/// Default setup
+/// Default setup. With default username
 + (void)setupWithApiKey:(nonnull NSString *)apiKey;
+/// Setup with username. Username is used for local games store
++ (void)setupWithApiKey:(nonnull NSString *)apiKey username:(nonnull NSString *)username;
 + (nullable instancetype)sharedInstance;
 
 /// Call this method from your AppDelegate for background upload
@@ -34,8 +36,8 @@
 /// @param leftPlayerName Name of left player
 /// @param rightPlayerName Name of right player
 /// @param gameType Type of game
-/// @param rulesType Rules of game
-- (nullable OSAIGameModel *)createGameWithLeftPlayerName:(nullable NSString *)leftPlayerName rightPlayerName:(nullable NSString *)rightPlayerName gameType:(OSAIGameType)gameType rulesType:(OSAIGameRules)rulesType;
+/// @param userLogin Login of user
+- (nullable OSAIGameModel *)createGameWithLeftPlayerName:(nullable NSString *)leftPlayerName rightPlayerName:(nullable NSString *)rightPlayerName gameType:(OSAIGameType)gameType userLogin:(nullable NSString *)userLogin;
 
 /// Remove existing game
 /// @param game Object of game to remove

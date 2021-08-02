@@ -70,4 +70,9 @@
 /// Device is stable and fixed. Observable
 @property (assign, nonatomic, readonly) BOOL isPhoneStable;
 
+
+
+
+@property (assign, nonatomic, readonly) NSInteger tableFPS;
+
 @end

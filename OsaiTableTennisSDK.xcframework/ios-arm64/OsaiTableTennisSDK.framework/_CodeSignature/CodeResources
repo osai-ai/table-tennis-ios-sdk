@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/OSAIGameModel.h</key>
 		<data>
-		29/+PWTM4tKkwGak94vQF861vU8=
+		zuBK7iNku0YwXs915AhPQC1CeZY=
 		</data>
 		<key>Headers/OSAIRecordGameView.h</key>
 		<data>
-		uHBeic7Pi0RrTmd2kgptvzX3yWU=
+		sT6cpuGC4TSB4S3sABxePL+qPig=
 		</data>
 		<key>Headers/OSAITableTennis.h</key>
 		<data>
-		JY/yDjmT+JL5cXyx1cjtSNtpENo=
+		35aTRxxd7AMSTEAdUkh1A6Zlklk=
 		</data>
 		<key>Headers/OsaiTableTennisSDK.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XoJhKt4E99V+FN2nKGrN0qfbuZ4=
+		xljm/TlwErQtoYEXJs7KcWMfcQ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>table.enc</key>
 		<data>
-		S8Y7h/nqCA6ntIEBl8GFFTZ4FKI=
+		ray7/N5wxgrzqVBZitwwAcJrwTY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,21 +43,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eaAz1Y11OHH/k07LYU72W51fMBFzoPLhVILJZrJTDtI=
+			5R3O07Sgoy4GjghcRCFBili7NugMG87ypjY9Yv2/OHg=
 			</data>
 		</dict>
 		<key>Headers/OSAIRecordGameView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aUojs1jAvuvhw/TPgavoe9X63gANwrgWLUsY/UrwHls=
+			yfuup4+E5jO0JEklnKuBDzx7ZzXH8h0OK1v22jwxL/Q=
 			</data>
 		</dict>
 		<key>Headers/OSAITableTennis.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GR4mlcvxmrdYetxDfNCpPwJJKk7kDrMJuLokwHwys0k=
+			LvZdx55f3rkzQbYEdZOgtVPkzLczgyhQNKO6z7t0ua0=
 			</data>
 		</dict>
 		<key>Headers/OsaiTableTennisSDK.h</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I1+tTw8GhSMjwDKIvfa/oA1GNW6pSNbxbK9fJSaX+Is=
+			1w1PXig5MJ9doevfMRSRw6FAsEvfjscGz4gtVuDOmOc=
 			</data>
 		</dict>
 	</dict>

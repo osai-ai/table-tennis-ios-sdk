@@ -9,9 +9,13 @@
 
 /// State of processing
 typedef NS_ENUM(NSUInteger, OSAIProcessState) {
+    /// Processing of game is not started yet
     OSAIProcessStateNotStarted,
+    /// Processing in progress
     OSAIProcessStateHandling,
+    /// Processing done, you can check report in *reportUrl*
     OSAIProcessStateDone,
+    /// Processing cancelled
     OSAIProcessStateCancelled,
 };
 
@@ -25,7 +29,7 @@ typedef NS_ENUM(NSUInteger, OSAIGameState) {
     OSAIGameStateUploadingPause,
     /// Uploading finished with error
     OSAIGameStateError,
-    /// Game is wait for processing
+    /// Game are uploaded and wait for processing
     OSAIGameStateWaitForProcessing
 };
 
@@ -39,6 +43,8 @@ typedef NS_ENUM(NSUInteger, OSAIGameType) {
 
 @interface OSAIGameModel : NSObject <NSCoding>
 
+/// Internal game id
+@property (strong, nonatomic, readonly) NSString *identifier;
 /// Game local state. Observable
 @property (assign, nonatomic, readonly) OSAIGameState state;
 /// Game processing state. Observable
@@ -49,6 +55,10 @@ typedef NS_ENUM(NSUInteger, OSAIGameType) {
 @property (strong, nonatomic, readonly) NSString *leftPlayerName;
 /// Name of right player
 @property (strong, nonatomic, readonly) NSString *rightPlayerName;
+
+/// Move players one to another
+- (void)switchPlayers;
+
 /// Date of creation
 @property (strong, nonatomic, readonly) NSDate *date;
 /// Duration of recorded game in seconds. Observable
@@ -65,6 +75,9 @@ typedef NS_ENUM(NSUInteger, OSAIGameType) {
 /// Thumbnail of recorded game
 @property (strong, nonatomic, readonly) UIImage *thumbnail;
 
+/// Remote URL for video
+@property (strong, nonatomic, readonly) NSURL *remoteVideoUrl;
+
 /// Path of stored videos
 @property (strong, nonatomic, readonly) NSString *path;
 
@@ -77,8 +90,7 @@ typedef NS_ENUM(NSUInteger, OSAIGameType) {
 /// Stop uploading process
 - (void)stopUpload;
 
-- (void)updateStatus;
-
-- (void)resetState;
+/// Game is only on local device. Need to be uploaded
+- (BOOL)needUpload;
 
 @end

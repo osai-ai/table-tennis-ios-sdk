@@ -13,15 +13,15 @@
 @class OSAIRecordGameView;
 @protocol OSAIRecordGameViewDelegate <NSObject>
 
-/// You need to close record controller
+/// Record is finished. You need to close record controller
 /// @param gameView sender
 - (void)recordGameViewDidFinishRecord:(nonnull OSAIRecordGameView *)gameView;
 
-/// You need to hide your preparation views
+/// You need to hide your preparation views. And you can show your custom record overlay
 /// @param gameView sender
 - (void)recordGameViewDidStartRecord:(nonnull OSAIRecordGameView *)gameView;
 
-/// You can show some preparation views
+/// You can show some custom preparation views
 /// @param gameView sender
 - (void)recordGameViewDidStartPreparation:(nonnull OSAIRecordGameView *)gameView;
 
@@ -42,6 +42,13 @@
 
 /// Customize font on every elements in this view
 @property (strong, nonatomic, nonnull) UIFont *font;
+
+/// Use your own start button
+@property (strong, nonatomic, nullable) UIButton *customStartButton;
+/// Use your own stop button
+@property (strong, nonatomic, nullable) UIButton *customStopButton;
+/// Use your own cancel button
+@property (strong, nonatomic, nullable) UIButton *customCancelButton;
 
 /// Seconds to countdown between preparation and actual record. Default to 10 seconds
 @property (assign, nonatomic) NSUInteger countdownSeconds;
@@ -69,10 +76,19 @@
 @property (assign, nonatomic, readonly) BOOL isVolumeLoud;
 /// Device is stable and fixed. Observable
 @property (assign, nonatomic, readonly) BOOL isPhoneStable;
+/// Device is on airplane mode. Observable
+@property (assign, nonatomic, readonly) BOOL isAirplaneMode;
 
 
+#pragma mark - Debug
 
-
+/// Disable table detection
+@property (assign, nonatomic) BOOL disableTableDetection;
+/// Time of last table recognition round
+@property (assign, nonatomic, readonly) double lastRunTime;
+/// FPS of table recognition model
 @property (assign, nonatomic, readonly) NSInteger tableFPS;
+/// FPS of camera frame processing
+@property (assign, nonatomic, readonly) NSInteger cameraFPS;
 
 @end

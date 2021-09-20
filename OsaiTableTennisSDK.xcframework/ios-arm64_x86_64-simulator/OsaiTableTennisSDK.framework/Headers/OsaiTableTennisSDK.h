@@ -18,4 +18,5 @@ FOUNDATION_EXPORT const unsigned char OsaiTableTennisSDKVersionString[];
 #import "OSAITableTennis.h"
 #import "OSAIRecordGameView.h"
 #import "OSAIGameModel.h"
+#import "OSAIUser.h"
 

@@ -6,23 +6,27 @@
 	<dict>
 		<key>Headers/OSAIGameModel.h</key>
 		<data>
-		zuBK7iNku0YwXs915AhPQC1CeZY=
+		XqHcWrzpIRd/w2ZilGOxmwTkOCs=
 		</data>
 		<key>Headers/OSAIRecordGameView.h</key>
 		<data>
-		sT6cpuGC4TSB4S3sABxePL+qPig=
+		+F/mgMpeoK3Sw0QQYHehqAfhU5Y=
 		</data>
 		<key>Headers/OSAITableTennis.h</key>
 		<data>
-		35aTRxxd7AMSTEAdUkh1A6Zlklk=
+		MSiHHkHLDTdzZsdL6XmOZKadI/o=
+		</data>
+		<key>Headers/OSAIUser.h</key>
+		<data>
+		+7eJSpjuhiHGHSKyWXC6AzsVMgM=
 		</data>
 		<key>Headers/OsaiTableTennisSDK.h</key>
 		<data>
-		muqtiTe0WTeBiYZyfTKVP0hO1OQ=
+		zZxGsExmCj99oDg20hTddAHMF80=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CxK4fafjWxwiXRjptK9S2vGo7ZI=
+		BHdOvn7cx2II0V9D3rrXbnq1C3I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>table.enc</key>
 		<data>
-		vUsYRNjFONZy3N2zoDuvfXr1TAY=
+		pErk+yoxYvU9bgVQGW+G+D7GB8g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,28 +47,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5R3O07Sgoy4GjghcRCFBili7NugMG87ypjY9Yv2/OHg=
+			IOszZu42+rl2DtO5l1/QtDhtKW8zpn2GJzUEGi0SwSI=
 			</data>
 		</dict>
 		<key>Headers/OSAIRecordGameView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yfuup4+E5jO0JEklnKuBDzx7ZzXH8h0OK1v22jwxL/Q=
+			OuBZrfheHhLj0g+qb87g+tQmnNJto1BaNIHv3DVToEY=
 			</data>
 		</dict>
 		<key>Headers/OSAITableTennis.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LvZdx55f3rkzQbYEdZOgtVPkzLczgyhQNKO6z7t0ua0=
+			I1gOucXfqNWh0Co6fNsYFZNmlcYD/oKuvDzBNJt+8TM=
+			</data>
+		</dict>
+		<key>Headers/OSAIUser.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LhsNnZZKlxdFj7LOSWPK9c81WEkz4Vq0mK84vwxNoB8=
 			</data>
 		</dict>
 		<key>Headers/OsaiTableTennisSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IaysshjQlrilKFhz6gpg3lf0/HsIRcKGdXzFKr3jCtM=
+			x8yau5gLSvlIelo/sTgC38lVbaCVqdbu944avYeLTRk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -85,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PTkqLe+v5LrVNc4RQyLH0BAnPHKJtLzGHAgUJYVhm5Y=
+			iPfpvSQYSWhbCo9U+OncrGW5YHglshxU2mifxX7pJVo=
 			</data>
 		</dict>
 	</dict>
